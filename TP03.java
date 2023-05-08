@@ -31,38 +31,53 @@ class Hora {
 
     void setHor() {
         Scanner ler = new Scanner(System.in);
-        int h;
+        int h=-1;
 
         do {
-            System.out.print("Digite as horas: ");
-            h = ler.nextInt();
+            try {
+                System.out.print("Digite as horas: ");
+                h = ler.nextInt();
+            } catch (Exception ex) {
+                System.out.println("Digite apenas numeros");
+                ler.nextLine();
+            }
         } while (h < 0 || h > 23);
 
-        this.hora = h;
+        setHor(h);
     }
 
     void setMin() {
         Scanner ler = new Scanner(System.in);
-        int m;
+        int m=-1;
 
         do {
-            System.out.print("Digite os minutos: ");
-            m = ler.nextInt();
+            try {
+                System.out.print("Digite os minutos: ");
+                m = ler.nextInt();
+            } catch (Exception ex) {
+                System.out.println("Digite apenas numeros");
+                ler.nextLine();
+            }
         } while (m < 0 || m > 59);
 
-        this.min = m;
+        setMin(m);
     }
 
     void setSeg() {
         Scanner ler = new Scanner(System.in);
-        int s;
+        int s=-1;
 
         do {
-            System.out.print("Digite os segundos: ");
-            s = ler.nextInt();
+            try {
+                System.out.print("Digite os segundos: ");
+                s = ler.nextInt();
+            } catch (Exception ex) {
+                System.out.println("Digite apenas numeros");
+                ler.nextLine();
+            }
         } while (s < 0 || s > 59);
 
-        this.seg = s;
+        setSeg(s);
     }
 
     int getHor() {
