@@ -78,7 +78,7 @@ class Hora {
     }
 
     String getHora1() {
-        return getHor() + ":" + getMin() + ":" + getSeg();
+        return this.getHor() + ":" + this.getMin() + ":" + this.getSeg();
     }
 
     String getHora2() {
@@ -105,26 +105,32 @@ public class TP03 {
     public static void main(String[] args) {
         int resp;
         Scanner ler = new Scanner(System.in);
+        Hora tp = new Hora();
         do {
             do {
                 System.out.println("Menu:");
-                System.out.println("1 - Inserir hora 1");
-                System.out.println("2 - Inserir hora 2");
-                System.out.println("3 - Mostrar hora formato 13:00:00");
-                System.out.println("4 - Mostrar hora formato 1:00:00 PM");
+                System.out.println("1 - Inserir hora");
+                System.out.println("2 - Mostrar hora formato 13:00:00");
+                System.out.println("3 - Mostrar hora formato 1:00:00 PM");
+                System.out.println("4 - Mostrar segundos");
                 System.out.println("5 - Sair");
             resp = ler.nextInt();
-            } while (resp < 1 || resp>5);
+            } while (resp < 1 || resp > 5);
 
             switch (resp)
             {
                 case 1:
+                    tp.Hora();
+                    System.out.println("Hora gravada com sucesso.");
                     break;
                 case 2:
+                    System.out.println(tp.getHora1());
                     break;
                 case 3:
+                    System.out.println(tp.getHora2());
                     break;
                 case 4:
+                    System.out.println(tp.getSegundos());
                     break;
             }
         } while (resp != 5);
