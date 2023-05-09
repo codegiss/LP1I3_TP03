@@ -1,6 +1,4 @@
-import java.util.Scanner;
-
-// Giselle ADS 371
+/*  Giselle e Miguel ADS 371
 // Exercício 1: O construtor Hora() deve permitir ao usuário digitar os valores de hora, minuto e segundos e com eles inicializar os atributos da
 //              classe. Os valores digitados deverão ser consistidos e só aceitos se válidos,caso contrário,exigir ao usuário redigitar;
 //              O construtor Hora(int h,int m,int s)deverá receber os valores de hora,minuto e segundos e com eles inicializa as propriedades da classe;
@@ -11,6 +9,9 @@ import java.util.Scanner;
 //              devolver a hora no formato:hh:mm:ss(AM/PM); O método getSegundos()deve nos devolver a quantidade de segundos expressa na hora em questão,
 //              (exemplo:01:00:01=3601 segundos). Conveniente colocar tratamento de exceção para as possíveis inconsistências na entrada de dados.
 // Exercício 2: Agora, desenvolva um programa capaz de testar a classe e os métodos desenvolvidos no exercício anterior.
+*/
+
+import java.util.Scanner;
 
 class Hora {
     private int hora;
