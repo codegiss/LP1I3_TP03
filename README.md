@@ -1,7 +1,7 @@
 # LP1I3_TP03
 TP 3 da disciplina LP1I3 do curso de Análise e Desenvolvimento de Sistemas - IFSP Cubatão.
 
-Giselle ADS 371 <br><br>
+Giselle e Miguel ADS 371 <br><br>
 Exercício 1: O construtor Hora() deve permitir ao usuário digitar os valores de hora, minuto e segundos e com eles inicializar os atributos da classe.
 <ul>
   <li>Os valores digitados deverão ser consistidos e só aceitos se válidos,caso contrário,exigir ao usuário redigitar;</li>
